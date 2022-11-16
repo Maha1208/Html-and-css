@@ -1,0 +1,55 @@
+a {
+    color: #f2708cf3;
+  }
+  
+  /* Internal links, beginning with "#" */
+  a[href^="#"] {
+    background-color: rgb(14, 15, 14);
+  }
+  
+  /* Links with "example" anywhere in the URL */
+  a[href*="example"] {
+    background-color: rgb(221, 218, 36);
+  }
+  
+  /* Links with "insensitive" anywhere in the URL,
+     regardless of capitalization */
+  a[href*="insensitive" i] {
+    color: cyan;
+  }
+  
+  /* Links with "cAsE" anywhere in the URL,
+  with matching capitalization */
+  a[href*="cAsE" s] {
+    color: rgb(17, 12, 14);
+  }
+  
+  /* Links that end in ".org" */
+  a[href$=".org"] {
+    color: red;
+  }
+  
+  /* Links that start with "https" and end in ".org" */
+  a[href^="https"][href$=".org"] {
+    color: rgb(214, 221, 215);
+  }
+  /* Case-sensitivity depends on document language */
+ol[type="a"] {
+    list-style-type: lower-alpha;
+    background: red;
+  }
+  
+  ol[type="b"] {
+    list-style-type: lower-alpha;
+    background: rgb(219, 221, 70);
+  }
+  
+  ol[type="D"] {
+    list-style-type: upper-alpha;
+    background: grey;
+  }
+  
+  ol[type="c" i] {
+    list-style-type: upper-alpha;
+    background: green;
+  }
